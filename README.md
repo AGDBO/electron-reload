@@ -5,7 +5,11 @@
 git init
 add et commit avec vscode
 git branch -M main
+Création d'un repo dans github
+Rattachement du repo au local
 git remote add origin https://github.com/AGDBO/electron-reload.git
+synchronisation du local et du distant
+git pull origin main
 
 
 

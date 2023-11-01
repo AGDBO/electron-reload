@@ -9,7 +9,9 @@ Création d'un repo dans github
 Rattachement du repo au local
 git remote add origin https://github.com/AGDBO/electron-reload.git
 synchronisation du local et du distant
-git pull origin main
+git pull origin main --allow-unrelated-histories
+Résoudre les conflits sur readme.md
+Commit
 
 
 

@@ -3,6 +3,10 @@
 # Ce projet reproduit au plus près l'environnement de mafinancespersonnelles
 #  vite + react + typescript + sass + sqlite3 
 git init
+add et commit avec vscode
+git branch -M main
+git remote add origin https://github.com/AGDBO/electron-reload.git
+
 
 
 # React + TypeScript + Vite

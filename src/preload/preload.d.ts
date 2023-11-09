@@ -4,5 +4,9 @@ declare global {
   interface Window {
     electron: ElectronAPI
     api: unknown
+
+    BridgeInstall: {
+      relanceApp: () => Promise<void>
+    }
   }
 }

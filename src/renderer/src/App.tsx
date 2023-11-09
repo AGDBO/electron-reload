@@ -1,7 +1,13 @@
-import Versions from './components/Versions'
-import icons from './assets/icons.svg'
+import Versions from './components/Versions';
+import icons from './assets/icons.svg';
+import { relanceApp } from './controleur/installCtrlSimple';
 
 function App(): JSX.Element {
+  function testReload(event): void {
+    event.preventDefault();
+    relanceApp();
+  }
+
   return (
     <div className="container">
       <Versions></Versions>
@@ -13,6 +19,8 @@ function App(): JSX.Element {
       <p className="hero-tagline">
         Please try pressing <code>F12</code> to open the devTool
       </p>
+
+      <button onClick={(event): void => testReload(event)}>Test reload </button>
 
       <div className="links">
         <div className="link-item">
@@ -137,7 +145,7 @@ function App(): JSX.Element {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

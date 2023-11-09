@@ -1,14 +1,26 @@
 # electron-reload
 
-An Electron application with React and TypeScript
+An Electron application with just React and TypeScript for test
 
 # Création d'un projet pour tester le fonctionnement du reload dans electron
 # Cela ne fonctionne pas correctement dans mon projet mesfinancespersonnelles
 # Ce projet reproduit au plus près l'environnement de mafinancespersonnelles
 #  vite + react + typescript + sass + sqlite3 
 
-npm create vite@latest
-choisir react puis typescript swc
+# Installation
+
+
+
+npm create @quick-start/electron electron-reload -- --template react-ts
+copier le nouveau répertoire electron-reload sur .
+
+npm install
+npm run dev
+
+npm install sass --save-dev
+
+Création des scripts dans le package.json
+npx electron-vite
 
 git init
 add et commit avec vscode
@@ -21,24 +33,9 @@ git pull origin main --allow-unrelated-histories
 Résoudre les conflits sur readme.md
 Commit
 
-A ce stade le serveur fonctionne à l'adresse
-http://localhost:5173/
-
-Ajout Electron (je me demande si installer seulement electron-vite n'est pas suffisant ? à tester)
-npm i electron-vite -D
-    "start": "electron-vite preview", // start electron app to preview production build
-    "dev": "electron-vite dev", // start dev server and electron app
-    "prebuild": "electron-vite build" // build for production
-
-npm create @quick-start/electron electron-reload -- --template react-ts
-copier le nouveau répertoire electron-reload sur .
-
-npm install
-npm run dev
-
-Création des scripts dans le package.json
-npx electron-vite
-
+# resultat cela ne fonctionne pas non plus dans cette application en dev
+# par contre cela fonction très bien en prod !
+# conclusion il faut passer être en prod pour que reload  fonctionne
 
 ## Recommended IDE Setup
 
